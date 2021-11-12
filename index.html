@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Site</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<style>
+    .itemHolder {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    padding: 30px;
+    }
+</style>
+<script>
+    function clickHandler() {
+    var x = document.getElementById("myText").value;
+    if (x=="7508") {
+        document.getElementById("textBox").innerHTML = "kaapi numero";
+    }
+    if (x=="0000") {
+        document.getElementById("textBox").innerHTML = "koordinaatit ja kaapin paikka";
+    }
+}
+</script>
+
+<body>
+<div class="itemHolder">
+    <p id="text">Enter the right codes and get the next clues.</p>
+    <input type="text" id="myText" value="">
+    <button id="button" type="button" onclick="clickHandler()">Enter</button>
+    <p id="textBox"></p>
+</div>
+</body>
+</html>
