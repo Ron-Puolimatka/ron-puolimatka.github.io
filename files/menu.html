@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="menuHandler.js"></script>
+
+    <div class="menutransitiondiv" id="transitiondiv"></div>
+    
+    <div style="position: fixed; left: -250px; transition: left 0.75s ease;" id="menubtns">
+      <button class="menubtn" id="newgame" onclick="loadNewGame();">New Game</button>
+      <button class="menubtn" id="continue" onclick="loadContinueMenu();">Continue</button>
+      <button class="menubtn" id="howtoplay" onclick="loadGuide();">How to play</button>
+      <button class="menubtn" id="credits" onclick="loadCredits();">Credits</button>
+    </div>
+  
+</body></html>
