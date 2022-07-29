@@ -1,1 +1,0 @@
-window.open("files/menu.html", "_self");
