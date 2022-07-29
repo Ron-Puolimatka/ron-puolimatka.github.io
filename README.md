@@ -1,2 +1,2 @@
-# ron-puolimatka.github.io
-Portfolio for all my presentable projects.
+# Ron Puolimatka, Portfolio
+Website for me to publish all my presentable projects.
