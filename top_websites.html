@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Costa Rica TOP-10</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>
+            function on_resize() {
+
+                resize_website_array();
+                resplit_website_info();
+            }
+        </script>
+    </head>
+
+
+    <body onload="on_resize()" onresize="on_resize()">
+
+        <div class="header_container" id="header_container">
+            <img src="assets/costa-rica-flag-simplified.png" alt="Costa Rican lippu" class="cr_flag_img"/>
+            <h1 id="title">Costa Rica</h1> 
+            <div class="menu_icon_container">
+                <p class="menu_icon menu_icon_hover" id="menu_icon" onclick="menu_browser_onclick_event()">☰</p>
+            </div>
+
+            <div style="transition: all 200ms; overflow: hidden;">
+                <div id="menu_browser" style="display: none;">
+                    <div class="page_links">
+                        <a href="index.html" class="pglink">Koti</a>
+                        <a href="internet.html" class="pglink">Internet</a>
+                        <a href="website.html" class="pglink">Marca</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div style="height: 80px"></div>
+
+            <div class="about">
+                <div class="typical_container">
+                    <h2 class="subheader">
+                        TOP-10 suosituinta sivustoa
+                    </h2>
+                    <p class="justified_regular">
+                        Alle on listattu Costa Rican suosituimmat nettisivut 16.1.2023 saatujen 
+                        tilastojen mukaan. Tiedot perustuvat semrush.com sivuston tilastoihin.
+                    </p>
+                    <p class="justified_regular">
+                        Listasta voi selvästikin huomata Costa Rican erityisen kiintymyksen viihteeseen,
+                        ja etenkin aikuisviihteeseen. Listan kaksi ensimmäistä paikkaa sijoittuvat
+                        suuryritys Googlen palveluille, mutta tämän jälkeen Facebookia huomioimatta
+                        ilmenee useampi erilainen aikuisviihdesivustot tai ainakin osittain sitä 
+                        julkaiseva sivusto. Jos listaa katsoisi vieläkin pidemmälle voi huomata, että 
+                        sama toistuu useammalla pienemmällä aikuisviihdesivustolla.
+                    </p>
+
+                    <p class="justified_regular" style="padding-bottom: 100px;">
+                        Toinen trendi joka näyttäisi olevan Costa Ricassa suosittu, on japanilaiset
+                        sarjat ja sarjakuvat tai anime ja manga. Costa Rican suosituimpien sivustojen 
+                        joukkoon kuuluu tällaisia sivustoja ja nämä jatkuvat aikuisviihteen lailla 
+                        top-10 listan jälkeenkin.
+                    </p>
+                </div>
+            </div>
+
+                <div class="webiste_blocks">
+                    <div class="webiste_block_matrix">
+                        <div class="website_block" onclick="website_info_open(1)">
+                            <p class="website_block_index">1.</p>
+                            <p class="website_block_name">google.com</p>
+                            <p class="website_block_desc">hakukone</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(2)">
+                            <p class="website_block_index">2.</p>
+                            <p class="website_block_name">youtube.com</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(3)">
+                            <p class="website_block_index">3.</p>
+                            <p class="website_block_name">lectortmo.com</p>
+                            <p class="website_block_desc">sarjakuvat</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(4)">
+                            <p class="website_block_index">4.</p>
+                            <p class="website_block_name">xvideos.com</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(5)">
+                            <p class="website_block_index">5.</p>
+                            <p class="website_block_name">animeflv.net</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(6)">
+                            <p class="website_block_index">6.</p>
+                            <p class="website_block_name">pornhub.com</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(7)">
+                            <p class="website_block_index">7.</p>
+                            <p class="website_block_name">facebook.com</p>
+                            <p class="website_block_desc">media</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(8)">
+                            <p class="website_block_index">8.</p>
+                            <p class="website_block_name">xnxx.com</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(9)">
+                            <p class="website_block_index">9.</p>
+                            <p class="website_block_name">jkanime.net</p>
+                            <p class="website_block_desc">videot</p>
+                        </div>
+
+                        <div class="website_block" onclick="website_info_open(10)">
+                            <p class="website_block_index">10.</p>
+                            <p class="website_block_name">lectormanga.com</p>
+                            <p class="website_block_desc">sarjakuvat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info_focus_filter" style="display: none; position: fixed; width: 100%; height: 100%; z-index: 899; background-color: rgba(0, 0, 0, 0.5); left: 0; right: 0; bottom: 0; top: 0; backdrop-filter: blur(10px);"></div>
+                <div class="website_info_container" id="website_info_container" style="display: none; padding: 10px;">
+
+                    <h1 id="wesbite_info_title" style="color:rgba(0, 0, 0, 0.2); text-transform: none; font-size: 24px;">Lorem Impsum</h1>
+
+                    <div class="website_info_exit_container">
+                        <p class="website_info_exit website_info_exit_hover" id="website_info_exit" onclick="website_info_exit()">⨉</p>
+                    </div>
+                     
+                    <div class="webiste_info_text_container" id="website_info_text_container">
+                        <div class="website_info_left_content">
+                            <h2 class="justified_regular">Sivustosta</h2>
+                            <p class="regular" id="website_info_desc">
+                                None
+                            </p>
+                        </div>
+
+                        <div class="website_info_right_content">
+                            <h2 class="justified_regular">Tilastoja (2022)</h2>
+                            <p class="regular" id="website_info_stats_1">
+                                None
+                            </p>
+                            <p class="regular" id="website_info_stats_2">
+                                None
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
